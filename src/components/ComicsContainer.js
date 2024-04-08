@@ -1,10 +1,9 @@
 import Comic from "./Comic"
 
-function ComicsContainer() {
-
+function ComicsContainer({comic, deleteComic}) {
   return (
     <>
-      <Comic />
+      <Comic id={comic.id} title={comic.title} issue={comic.issue} img={comic.image_url} deleteComic={deleteComic}/>
     </>
   )
 
